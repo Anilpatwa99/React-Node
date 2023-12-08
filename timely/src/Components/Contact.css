@@ -1,0 +1,32 @@
+.col-12 input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    outline: none;
+    color: #101010;
+    -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+}
+
+#Message {
+    height: 120px;
+}
+
+#send-btn {
+    text-align: center;
+    border: none;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.btn {
+    border: none;
+}
+#contact-image img {
+    height: 100%;
+    width: 100%;
+}

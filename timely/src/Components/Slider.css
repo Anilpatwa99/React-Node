@@ -1,0 +1,13 @@
+.slider-box img {
+
+    width: 100%;
+    min-height: 600px;
+
+}
+
+.slider-box {
+
+    overflow-x: hidden;
+
+
+}

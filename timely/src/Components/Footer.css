@@ -1,0 +1,15 @@
+.footer {
+    background-color: #0f1521;
+    color: #fff;
+}
+
+#social-icon i {
+    color: #fff;
+    transition: all 1s;
+}
+
+#social-icon i:hover {
+    color: #8019c8;
+
+
+}
