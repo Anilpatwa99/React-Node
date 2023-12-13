@@ -1,30 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Components/Navbar';
-import Slider from './Components/Slider';
-import Service from './Components/Service';
-import About from './Components/About';
-import Product from './Components/Product';
-import Feature from './Components/Feature';
-import NewArrival from './Components/NewArrival';
-import Contact from './Components/Contact';
-import Footer from './Components/Footer';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+// Import other pages/components as needed
 
 function App() {
   return (
-    <>
-    
-      <Navbar/>
-      <Slider/>
-      <Service/>
-      <About/>
-      <Product/>
-      <Feature/>
-      <NewArrival/>
-      <Contact/>
-      <Footer/>
+    <Router>
+      <>
+        {/* Your header or navigation can go here if needed */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
 
-    </>
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+        {/* You can add a "not found" route at the end */}
+        {/* <Route path="*" element={<NotFoundPage />} /> */}
+        {/* Your footer can go here if needed */}
+      </>
+    </Router>
   );
 }
 

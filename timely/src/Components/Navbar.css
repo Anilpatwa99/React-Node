@@ -1,5 +1,5 @@
 .header {
-    z-index: 1000;
+    z-index: 999;
     background-color: #fff;
     box-shadow: 0 0 10px #8019c8;
 }

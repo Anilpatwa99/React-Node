@@ -1,0 +1,42 @@
+ .img1{
+    width: 100%;
+    height: 100%;
+}
+.banner-img{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 992px){
+    .banner-img {
+            height: 100%;
+            
+        }
+}
+.slick-dots {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+/* Style for each individual dot */
+.slick-dots li button {
+    width: 20px;
+    /* Adjust the width and height as needed */
+    height: 20px;
+    border-radius: 50%;
+   
+    /* Default dot color */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style for the currently active dot */
+.slick-dots li.slick-active button {
+    background-color: rgb(58, 192, 58);
+    transform: scale(1.5);
+    /* Change to the desired active dot color */
+}
+
+/* Hover effect for all dots */
