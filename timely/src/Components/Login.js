@@ -12,10 +12,12 @@ const Login = () => {
     setIsLogin(true);
   };
 
+
+
   return (
     <div className='Login-body'>
-      <div className={`login-container ${isLogin ? 'login-container' : 'login-container active'}`} id="login-container">
-        <div className="form-login-container sign-up">
+      <div className={`${isLogin ? 'login-container' : 'login-container active'}`} id="login-container">
+        <div className="form-container sign-up">
           <form>
             <h1>Create Account</h1>
             <div className="social-icons">
@@ -28,6 +30,7 @@ const Login = () => {
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
+
             <button>Sign Up</button>
           </form>
         </div>

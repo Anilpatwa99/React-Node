@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse " id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-75 d-flex justify-content-end" id="menu">
                 <li className="nav-item">
-                  <a className="nav-link nav-home fs-5 text-light" aria-current="page" href="#home">Home</a>
+                  <a className="nav-link nav-home fs-5 text-light" aria-current="page" href="/">Home</a>
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle  fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,10 +32,10 @@ const Navbar = () => {
                   <Link className="nav-link fs-5" to="/login">Login</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link  fs-5" href="#about">About</a>
+                  <a className="nav-link  fs-5" href="/#about">About</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link  fs-5" href="#contact">Contact </a>
+                  <a className="nav-link  fs-5" href="/Contact">Contact </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link  fs-5" href="#"><i className="fas fa-shopping-cart" /></a>

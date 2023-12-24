@@ -1,0 +1,205 @@
+.product img {
+
+    width: 25rem;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+}
+
+h2 {
+
+    text-align: end;
+    width: 100%;
+    color: white;
+}
+
+.Product-page {
+    background-color: #191919;
+}
+
+.product-des {
+    color: white;
+    width: 45%;
+
+}
+
+
+
+.price-tax {
+    font-size: 14px;
+}
+
+.mrp {
+    font-size: 14px;
+
+}
+
+/* .bank{
+            border: 0.1px solid gray;
+            border-radius: 10px;
+
+        } */
+.bank-details {
+    font-size: 10px;
+
+
+}
+
+.bank {
+
+    box-sizing: border-box;
+    width: 150px;
+}
+
+.delivery-add {
+    font-size: 13px;
+    background-color: #353535;
+}
+
+.delivery-add span {
+    font-size: 11px;
+}
+
+.key-feature li {
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    .Product-details {
+        display: block !important;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product-des {
+        width: 100%;
+    }
+
+    .Product-Slider {
+        width: 100% !important;
+
+    }
+}
+
+.specification-des {
+    display: flex;
+
+
+}
+
+.specification-des1 {
+
+    width: 30%;
+}
+
+.specification-des1 h2 {
+    font-size: 15px;
+    text-align: start;
+}
+
+.specification-des1 h3 {
+    font-size: 17px;
+}
+
+.accordion-item {
+    background-color: #191919;
+    color: white;
+}
+
+.accordion-item h2 {
+    background-color: #191919;
+}
+
+.product {
+    height: 30rem;
+}
+
+.product img {
+    position: relative;
+    top: 5rem;
+    left: 1rem;
+}
+
+.overall-rating p {
+    font-size: 11px;
+}
+
+.Rating-box {
+    width: 35%;
+}
+
+.barAndStar {
+    gap: 5px;
+}
+
+.barAndStar .star-text,
+p {
+    font-size: 12px;
+}
+
+.bar-container {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 8px;
+}
+
+#cars option {
+    font-size: 15px;
+    background-color: #191919;
+}
+
+.cust-review {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 768px) {
+    .Rating-box {
+        border-left: 0;
+        border-right: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    .product img {
+        width: 15rem;
+    }
+
+    .product {
+        height: 20rem;
+    }
+
+    .cust-review {
+        display: block;
+        
+    }
+    .Sort{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.banks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Product-Slider img {
+    width: 10rem;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.Product-Slider {
+    width: 25rem;
+
+}
+

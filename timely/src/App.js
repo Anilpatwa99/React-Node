@@ -2,6 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
+import AddtoCart from './pages/AddtoCart';
+import StarRating from './pages/StarRating';
+import ProductDes from './pages/ProductDes';
+import ContactPage from './pages/ContactPage';
 // Import other pages/components as needed
 
 function App() {
@@ -13,6 +17,13 @@ function App() {
           <Route path="/" element={<HomePage />} />
 
           <Route path="/login" element={<LoginPage />} />
+
+          <Route path="/AddToCart" element={<AddtoCart />} />
+
+          <Route path="/star" element={<StarRating />} />
+          <Route path="/Product-Des" element={<ProductDes/>} />
+          <Route path="/Contact" element={<ContactPage/>} />
+
         </Routes>
         {/* You can add a "not found" route at the end */}
         {/* <Route path="*" element={<NotFoundPage />} /> */}
