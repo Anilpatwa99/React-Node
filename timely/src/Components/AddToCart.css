@@ -1,29 +1,26 @@
- .gradient-custom {
-     /* fallback for old browsers */
-     background: #6a11cb;
+  .site-blocks-table {
+      overflow: auto;
+  }
 
-     /* Chrome 10-25, Safari 5.1-6 */
-     background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  .product-thumbnail img {
+      width: 4rem;
 
-     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
- }
 
- .form-outline .form-control {
-     text-align: center;
- }
+  }
 
- .Cart img {
-     height: 100%;
-     width: 100%;
- }
-
- .Cart-image {
-     text-align: center;
-     height: 7rem;
-     width: 5rem;
- }
- .cardleft
- {
-    width: 20rem;
- }
+  .Cart-box {
+    background-color: #f8f8f8;
+  }
+  .cart-btn{
+    box-shadow: 1px 1px 5px black;
+    width: 100%;
+    
+    font-family: sans-serif;
+    border-radius: 5px;
+  }
+  .cart-btn:hover{
+    background-color: #8019c8;
+    color: white;
+  }
+ 
+ 

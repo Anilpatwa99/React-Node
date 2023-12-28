@@ -4,111 +4,136 @@ import './AddToCart.css'
 
 const AddToCart = () => {
     return (
-        <section className>
-             <div className="border rounded-5">
-                 <section className="w-100 p-5 gradient-custom addtocart" >
+        <div className="Cart-box before-footer-section pt-5  pb-5 ">
+            <div className="container bg-light border rounded">
+                <div className="row mb-5   ">
+                    <form className="col-md-12  cart-form " method="post">
+                        <div className="site-blocks-table    ">
+                            <table className="table ">
+                                <thead className>
+                                    <tr className>
+                                        <th className=" fs-5">Image</th>
+                                        <th className=" fs-5  ">Product</th>
+                                        <th className="  fs-5">Price</th>
+                                        <th className=" fs-5">Quantity</th>
+                                        <th className="  fs-5">Total</th>
+                                        <th className=" fs-5">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="product-thumbnail   ">
+                                            <img src="./images/w2.png" alt="Image" className="img-fluid" />
+                                        </td>
+                                        <td className="   ">
+                                            <h2 className="h5  text-start  ">Product 1</h2>
+                                        </td>
+                                        <td className="    ">$49.00</td>
+                                        <td className=" ">
+                                            <div className="input-group mb-3 d-flex align-items-center quantity-container" style={{ maxWidth: 120 }}>
+                                                <div className="input-group-prepend">
+                                                    <button className="  border-0 border rounded ps-2 pe-2  " onclick="decrease( )" type="button"><i className="fa-solid fa-minus" /></button>
+                                                </div>
+                                                <h1><span id="count" className="fs-5 ms-3 me-3"> 0</span></h1>
+                                                <div className="input-group-append">
+                                                    <button className=" border-0 border rounded ps-2 pe-2 " onclick="increase( )" type="button"><i className="fa-solid fa-plus" /></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td className=" ">$49.00</td>
+                                        <td className="  "><a href="#" className=" ms-4"><i className="fa-solid fa-trash  text-dark  " /></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td className="product-thumbnail   ">
+                                            <img src="./images/w9.png" alt="Image" className="img-fluid" />
+                                        </td>
+                                        <td className="   ">
+                                            <h2 className="h5   text-start ">Product 1</h2>
+                                        </td>
+                                        <td className="    ">$49.00</td>
+                                        <td className=" ">
+                                            <div className=" d-flex align-items-center " >
+                                                <div className="input-group-prepend">
+                                                    <button className="  border-0 border rounded ps-2 pe-2  " onclick="decrease( )" type="button"><i className="fa-solid fa-minus" /></button>
+                                                </div>
+                                                <h1><span id="count" className="fs-5 ms-3 me-3"> 0</span></h1>
+                                                <div className="input-group-append">
+                                                    <button className=" border-0 border rounded ps-2 pe-2 " onclick="increase( )" type="button"><i className="fa-solid fa-plus" /></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td className=" ">$49.00</td>
+                                        <td className="  "><a href="#" className="ms-4"><i className="fa-solid fa-trash  text-dark " /></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <div className="row  p-5 ">
+                    <div className="col-md-6">
+                        <div className="row mb-5">
+                            <div className="col-md-6 mb-3 mb-md-0">
+                                <button className="cart-btn border-0">Update Cart</button>
+                            </div>
+                            <div className="col-md-6">
+                                <button className="cart-btn border-0">Continue Shopping</button>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-12">
+                                <label className="text-black h4" htmlFor="coupon">Coupon</label>
+                                <p>Enter your coupon code if you have one.</p>
+                            </div>
+                            <div className="col-md-8 mb-3 mb-md-0">
+                                <input type="text" className="form-control py-3" id="coupon" placeholder="Coupon Code" />
+                            </div>
+                            <div className="col-md-4">
+                                <button className="cart-btn border-0">Apply Coupon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-6 pl-5">
+                        <div className="row justify-content-end">
+                            <div className="col-md-7">
+                                <div className="row">
+                                    <div className="col-md-12 text-right border-bottom mb-5">
+                                        <h3 className="text-black h4 text-uppercase">Cart Totals</h3>
+                                    </div>
+                                </div>
+                                <div className="row mb-3">
+                                    <div className="col-md-6">
+                                        <span className="text-black">Subtotal</span>
+                                    </div>
+                                    <div className="col-md-6 text-right">
+                                        <strong className="text-black">$230.00</strong>
+                                    </div>
+                                </div>
+                                <div className="row mb-5">
+                                    <div className="col-md-6">
+                                        <span className="text-black">Total</span>
+                                    </div>
+                                    <div className="col-md-6 text-right">
+                                        <strong className="text-black">$230.00</strong>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-12">
+                                        <button className="cart-btn border-0" onclick="window.location='checkout.html'">Proceed To Checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                     <div className="row">
-                         <div className="col-md-8">
-                             <div className="card cardleft mb-4">
-                                 <div className="card-header py-3">
-                                     <h5 className="mb-0">Cart - Items</h5>
-                                 </div>
-                                 <div className="card-body Cart">
-
-                                     <div className="row">
-                                         <div className="d-flex justify-content-center col-lg-3 col-md-12 mb-4 mb-lg-0">
-
-                                             <div className=" Cart-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                                 <img src="http:127.0.0.1:5500/handtime-html/images/w4.png" className="w-100" alt="Blue Jeans Jacket" />
-                                                 <a href="#!">
-                                                     <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}>
-                                                     </div>
-                                                 </a>
-                                             </div>
-
-                                         </div>
-                                         <div className="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                                             {/* Data */}
-                                             <p><strong>Men's Watch</strong></p>
-                                             <p>Color: black</p>
-                                             <button type="button" className="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip" title="Remove item" fdprocessedid="ygtzj">
-                                                 <i className="fas fa-trash" />
-                                             </button>
-                                             <button type="button" className="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip" title="Move to the wish list" fdprocessedid="7h5j9n">
-                                                 <i className="fas fa-heart" />
-                                             </button>
-                                             {/* Data */}
-                                         </div>
-                                         <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                             {/* Quantity */}
-                                             <div className="d-flex mb-4" style={{ maxWidth: 300 }}>
-                                                 <button className="btn btn-primary px-3 me-2" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" fdprocessedid="hmvgju">
-                                                     <i className="fas fa-minus" />
-                                                 </button>
-                                                 <div className="form-outline">
-                                                     <input id="form1" min={0} name="quantity" defaultValue={1} type="number" className="form-control" fdprocessedid="al5k4p" />
-                                                 </div>
-                                                 <button className="btn btn-primary px-3 ms-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" fdprocessedid="xdp80i">
-                                                     <i className="fas fa-plus" />
-                                                 </button>
-                                             </div>
-                                             {/* Quantity */}
-                                             {/* Price */}
-                                             <p className="text-start text-md-center">
-                                                 <strong>$17.99</strong>
-                                             </p>
-                                             {/* Price */}
-                                         </div>
-                                     </div>
-                                     {/* Single item */}
-                                     <hr className="my-4" />
-                                     {/* Single item */}
-                                     {/* Single item */}
-                                 </div>
-                             </div>
-                         </div>
-                         <div className="col-md-4 d-flex flex-column justify-content-center">
-                             <div className="card mb-4">
-                                 <div className="card-header py-3">
-                                     <h5 className="mb-0">Price Details</h5>
-                                 </div>
-                                 <div className="card-body">
-                                     <ul className="list-group list-group-flush">
-                                         <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                                             Subtotal
-                                             <span>$53.98</span>
-                                         </li>
-                                         <li className="list-group-item d-flex justify-content-between align-items-center px-0">
-                                             Shipping
-                                             <span>Gratis</span>
-                                         </li>
-                                         <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-                                             <div>
-                                                 <strong>Total amount</strong>
-                                                 <strong>
-                                                     <p className="mb-0">(including VAT)</p>
-                                                 </strong>
-                                             </div>
-                                             <span><strong>$53.98</strong></span>
-                                         </li>
-                                     </ul>
-                                     <button type="button" className="btn btn-primary btn-lg btn-block" fdprocessedid="xlciem">
-                                         Go to checkout
-                                     </button>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </section>
-             </div>
-         </section>
-        
 
 
-        
-    
-   
+
+
+
 
     );
 }
