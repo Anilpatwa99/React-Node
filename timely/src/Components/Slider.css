@@ -1,13 +1,14 @@
 .slider-box img {
 
     width: 100%;
-    min-height: 600px;
+    min-height: 30rem;
+    min-width: 60rem;
 
 }
 
 .slider-box {
 
-    overflow-x: hidden;
+    overflow: auto;
 
 
 }

@@ -9,7 +9,8 @@
   }
 
   .Cart-box {
-    background-color: #f8f8f8;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
   }
   .cart-btn{
     box-shadow: 1px 1px 5px black;
@@ -17,10 +18,22 @@
     
     font-family: sans-serif;
     border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px 0 10px 0;
   }
   .cart-btn:hover{
     background-color: #8019c8;
     color: white;
   }
- 
- 
+  .table{
+    min-width: 700px;
+    border: 0 groove black;
+    
+  }
+  @media(max-width: 768px){
+    .cart-totals{
+      margin-top: 50px;
+    }
+  }
+

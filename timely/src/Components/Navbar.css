@@ -6,16 +6,31 @@
 
 .header .nav-link {
     color: black;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+.profile-btn {
+    position: relative !important;
+    top: 5px !important;
+}
+
+.profile-btn:hover {
+    border-radius: 10px;
+    background-color: transparent !important;
+    color: black !important;
 
 }
 
 .header .nav-link:hover {
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #8019c8;
     color: #fff;
 
 }
+
+
 
 .nav-home {
     background-color: #8019c8;
@@ -39,25 +54,27 @@
     background-color: #8019c8;
     color: #fff;
 }
+
 .btn {
-    background-color: #8019c8;
+    background-color: #0f1521;
+
 }
 
 .btn:hover {
-    background-color: #0f1521;
+    background-color: #8019c8;
     color: #fff;
 }
 
 li {
     margin-right: 10px;
 }
-.container-fluid img{
+
+.container-fluid img {
     height: 40px;
     width: 40px;
     position: relative;
     bottom: 5px;
     border-radius: 10px;
-    
+
 
 }
-

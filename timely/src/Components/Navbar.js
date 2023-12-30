@@ -16,10 +16,11 @@ const Navbar = () => {
             <div className="collapse navbar-collapse " id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-75 d-flex justify-content-end" id="menu">
                 <li className="nav-item">
-                  <a className="nav-link nav-home fs-5 text-light" aria-current="page" href="/">Home</a>
+
+                  <Link className="nav-link nav-home   text-light" aria-current="page" to="/">Home</Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle  fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a className="nav-link dropdown-toggle   " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Product
                   </a>
                   <ul className="dropdown-menu">
@@ -28,23 +29,29 @@ const Navbar = () => {
                     <li><a className="dropdown-item" href="#new_arrival">New Arrivals</a></li>
                   </ul>
                 </li>
+
                 <li className="nav-item">
-                  <Link className="nav-link fs-5" to="/login">Login</Link>
+                  <Link className="nav-link  " to="/#about-us">About</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link  fs-5" href="/#about">About</a>
+                  <Link className="nav-link  " to="/Contact">Contact</Link>
+
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link  fs-5" href="/Contact">Contact </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link  fs-5" href="#"><i className="fas fa-shopping-cart" /></a>
-                </li>
+
               </ul>
               <form className="d-flex" role="search">
                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success text-light" type="submit">Search</button>
+                <button className=" border-0  bg-transparent" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
               </form>
+              <ul className="navbar-nav me-auto mb-2 ms-2 d-flex justify-content-end" id="menu">
+                <li className="nav-item d-flex">
+                  <Link className="nav-link profile-btn  ms-2 me-2" to="/login"><i class="fa-solid fa-user"></i></Link>
+                  <Link className="nav-link profile-btn  ms-2" to="/AddToCart"><i className="fas fa-shopping-cart" /></Link>
+                </li>
+
+
+              </ul>
             </div>
           </div>
         </nav>
