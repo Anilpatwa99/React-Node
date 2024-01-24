@@ -105,6 +105,8 @@ const ProductDes = () => {
                         </div>
                     </div>
                 </div>
+
+                
                 <div className="accordion-item mb-5 border rounded border-secondary p-3 mt-5">
                     <h2 className="accordion-header border rounded border-0 pb-2 " id="headingOne">
                         <button className="accordion-button fs-4  text-light d-flex justify-content-" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

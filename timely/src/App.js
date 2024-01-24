@@ -6,6 +6,7 @@ import AddtoCart from './pages/AddtoCart';
 import StarRating from './pages/StarRating';
 import ProductDes from './pages/ProductDes';
 import ContactPage from './pages/ContactPage';
+import DashBoard from './pages/DashBoard';
 // Import other pages/components as needed
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/star" element={<StarRating />} />
           <Route path="/Product-Des" element={<ProductDes/>} />
           <Route path="/Contact" element={<ContactPage/>} />
+          <Route path="/dashboard" element={<DashBoard />} />
 
         </Routes>
         {/* You can add a "not found" route at the end */}

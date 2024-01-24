@@ -21,7 +21,7 @@ app.use(morgan("dev"));
 
 // Use the product routes
 // app.use("/products", require("./routes/Productroutes"));
-// app.use("/users", require("./routes/UserRoutes"));
+app.use("/users", require("./routes/UserRoutes"));
 
 
 //rest api
