@@ -17,7 +17,7 @@ function HomePage() {
             <Slider />
             <Service />
             <About />
-            <Product />
+            <Product  />
             <Feature />
             <NewArrival />
             <Banner />

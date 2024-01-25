@@ -15,6 +15,7 @@ function Card_Container({oldprice,newprice,image}) {
                 </h5>
             </div>
         </div>
+
     )
 }
 

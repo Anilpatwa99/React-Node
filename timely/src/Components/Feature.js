@@ -1,10 +1,28 @@
-import React from 'react'
-import Card from './Card_Container'
-import Card_Data from '../Data/Card_Data'
-
-
+import React from "react";
+import Card from "./Card_Container";
+import { useState } from "react";
+import axios from "axios";
+import { useEffect } from "react";
+// import Card_Data from "../Data/Card_Data";
 
 const Feature = () => {
+  const [Card_Data, setCard_Data] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:8000/products/allproducts"
+        );
+        const data = response.data;
+        setCard_Data(data);
+      } catch (error) {
+        console.log(`Error fetching data: ${error}`);
+      }
+    };
+    fetchData();
+  }, []);
+  console.log(Card_Data);
   return (
     <section className="service pt-0 pb-5 mt-5  " id="feature">
       <div className="container">
@@ -22,9 +40,7 @@ const Feature = () => {
         </div>
       </div>
     </section>
+  );
+};
 
-
-  )
-}
-
-export default Feature
+export default Feature;

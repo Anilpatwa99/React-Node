@@ -1,9 +1,9 @@
-const electronics = require("../models/Productschema");
+const Product = require("../models/Productschema");
 
 const addproductController = async (req, res) => {
   try {
     // Create a new product based on the request body
-    const newProduct = new electronics(req.body);
+    const newProduct = new Product(req.body);
 
     // Save the new product to the database
     await newProduct.save();
@@ -19,7 +19,7 @@ const addproductController = async (req, res) => {
 const allproductController = async (req, res) => {
   try {
     // Query the database to retrieve all products
-    const products = await electronics.find();
+    const products = await Product.find();
 
     // Respond with the list of products
     res.status(200).json(products);
@@ -32,7 +32,7 @@ const allproductController = async (req, res) => {
 const featuredproductController = async (req, res) => {
   try {
     // Query the database to retrieve all products
-    const products = await electronics.find({ category: "featured" });
+    const products = await Product.find({ category: "featured" });
 
     // Respond with the list of products
     res.status(200).json(products);
@@ -45,7 +45,7 @@ const featuredproductController = async (req, res) => {
 const popularproductController = async (req, res) => {
   try {
     // Query the database to retrieve all products
-    const products = await electronics.find({ category: "popular" });
+    const products = await Product.find({ category: "popular" });
 
     // Respond with the list of products
     res.status(200).json(products);

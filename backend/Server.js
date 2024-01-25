@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 // Use the product routes
-// app.use("/products", require("./routes/Productroutes"));
+app.use("/products", require("./routes/Productroutes"));
 app.use("/users", require("./routes/UserRoutes"));
 
 
