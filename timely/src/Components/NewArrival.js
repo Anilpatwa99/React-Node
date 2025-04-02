@@ -34,8 +34,9 @@ const NewArrival = () => {
           {Card_Data.slice(6, 9).map((item, index) => (
             <Card
               key={index}
+              id={item.id}
               title={item.title}
-              newprice={item.newprice}
+              newprice={item.NewPrice}
               oldprice={item.OldPrice}
               image={item.imageUrl}
             />

@@ -31,8 +31,9 @@ const Feature = () => {
           {Card_Data.slice(3, 6).map((item, index) => (
             <Card
               key={index}
+              id={item.id}
               title={item.title}
-              newprice={item.newprice}
+              newprice={item.NewPrice}
               oldprice={item.OldPrice}
               image={item.imageUrl}
             />

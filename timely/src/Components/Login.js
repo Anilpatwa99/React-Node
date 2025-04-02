@@ -4,10 +4,13 @@ import { Link, useNavigate } from "react-router-dom";
 import './Login.css'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useDispatch } from 'react-redux';
+import { setUser } from '../redux/features/userSlice';
 
 const Login = () => {
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [isLogin, setIsLogin] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
@@ -70,6 +73,32 @@ const Login = () => {
 
       if (res.data.success) {
         localStorage.setItem("token", res.data.token);
+         try {
+           const res = await axios.post(
+             "http://localhost:8000/users/getuserdata",
+             { token: localStorage.getItem("token") },
+             {
+               headers: {
+                 Authorization: `Bearer ${localStorage.getItem("token")}`,
+               },
+             }
+           );
+           if (res.data.success) {
+             const Admin = res.data.data.isAdmin;
+             if(Admin){
+              navigate("/admin")
+             }
+             else{
+               toast.success("Login Successfully");
+              navigate("/")
+             }
+           } else {
+             navigate("/");
+           }
+         } catch (error) {
+           localStorage.clear();
+           console.log(error);
+         }
         toast.success("Login Successfully");
         navigate("/");
       } else {

@@ -29,16 +29,15 @@ const Product = () => {
       <div className="container">
         <div className="product-label">Top Sale Watches</div>
         <div className="card-group ">
-          {Card_Data.slice(0, 3).map((item) => (
-            <Link to={`/productdes/${item.id}`}>
-              <Card
-                key={item.id}
-                title={item.title}
-                newprice={item.newprice}
-                oldprice={item.OldPrice}
-                image={item.imageUrl}
-              />
-            </Link>
+          {Card_Data.slice(0, 3).map((item, index) => (
+            <Card
+              key={index}
+              id={item.id}
+              title={item.title}
+              oldprice={item.OldPrice}
+              newprice={item.NewPrice}
+              image={item.imageUrl}
+            />
           ))}
         </div>
       </div>

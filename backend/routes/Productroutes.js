@@ -5,12 +5,14 @@ const {
   featuredproductController,
   allproductController,
   addproductController,
+  upload,
 } = require("../Controllers/productController");
 
 const router = express.Router();
 
 // Define a route to handle adding a new product
-router.post("/add", addproductController);
+// Define route to add a new product with image upload
+router.post("/add", upload.single("image"), addproductController);
 
 // Define a route to get all products
 router.get("/allproducts", allproductController);

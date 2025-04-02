@@ -37,3 +37,49 @@
     }
   }
 
+
+
+
+
+
+
+  
+.quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.quantity-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.quantity-count {
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: red;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}

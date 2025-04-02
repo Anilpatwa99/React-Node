@@ -1,0 +1,36 @@
+.admin-navbar {
+    background-color: #0e0713;
+    height: 65px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-sidebar {
+    background-color: rgb(19, 41, 55);
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+
+}
+
+.admin-main {
+   
+    
+    margin-left: 300px;
+    margin-top: 65px;
+    overflow-y: auto;
+
+}
+.logout{
+    position: absolute;
+    bottom: 100px;
+}
+.form-vertical{
+    height: 75vh;
+    width: 90%;
+}

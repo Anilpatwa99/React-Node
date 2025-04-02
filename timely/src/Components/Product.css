@@ -51,6 +51,10 @@
     margin: 0 -10px;
 }
 
+.link{
+    text-decoration: none !important;
+}
+
 @media (max-width: 320px) {
     .card-image img {
         height: 10rem;
