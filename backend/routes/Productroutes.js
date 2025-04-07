@@ -1,11 +1,11 @@
 const express = require("express");
+const { upload } = require("../config/cloudinaryConfig");
 const authmiddlewares = require("../middlewares/authmiddlewares");
 const {
   popularproductController,
   featuredproductController,
   allproductController,
   addproductController,
-  upload,
 } = require("../Controllers/productController");
 
 const router = express.Router();
